@@ -1,10 +1,14 @@
+ul {
+    list-style: none;
+}
+
 nav .input-group-text, .form-control {
     background-color: #E5E5E5;
     border: 0;
     padding: .375rem;
 }
 
-nav form {
+nav form, .spaced {
     flex: 1 0 0;
 }
 
@@ -17,4 +21,20 @@ nav form {
     position: absolute;
     left: unset;
     right: 0;
+}
+
+.spaced {
+    flex: 1 0 0;
+}
+
+aside {
+    background-color: #051E34;
+    background-image: url(img/sidebar-bg.png);
+    background-position-x: 15%;
+    background-repeat: no-repeat;
+}
+
+aside, main {
+    padding-top: 62px;
+    padding-bottom: 31px;
 }
