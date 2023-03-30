@@ -1,0 +1,20 @@
+nav .input-group-text, .form-control {
+    background-color: #E5E5E5;
+    border: 0;
+    padding: .375rem;
+}
+
+nav form {
+    flex: 1 0 0;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    margin-inline-start: 1rem;
+}
+
+.dropdown-menu[data-bs-popper] {
+    position: absolute;
+    left: unset;
+    right: 0;
+}
