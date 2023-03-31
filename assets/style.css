@@ -1,29 +1,27 @@
 /* heaer */
 
-ul {
-    list-style: none;
-}
-
-header nav form .input-group .input-group-text, header nav form .input-group .form-control {
+header nav form .input-group .input-group-text,
+header nav form .input-group .form-control {
     background-color: #E5E5E5;
     border: 0;
     padding: .375rem;
 }
 
-header nav form, .spaced {
+header nav form,
+.spaced {
     flex: 1 0 0;
 }
 
-nav img {
+header nav a>img {
     margin-inline-end: 1rem;
 }
 
-.navbar-nav {
+header nav .navbar-nav {
     flex-direction: row;
     margin-inline-start: 1rem;
 }
 
-.dropdown-menu[data-bs-popper] {
+header nav .navbar-nav .dropdown .dropdown-menu[data-bs-popper] {
     position: absolute;
     left: unset;
     right: 0;
@@ -52,32 +50,34 @@ aside i {
 
 /* main */
 
-.top_main>.row {
+main .top_main>.row {
     background-color: #1B72E8;
 }
 
-.top_main .btn i {
+main .top_main .btn i {
     width: 16px;
     aspect-ratio: 1 / 1;
 }
 
-.top_main .btn:hover {
-    color: #1B72E8;
-}
-
-.top_main .badge {
+.top_main .boolean .badge {
     background-color: #165BBA;
 }
 
-main nav .input-group-text, main .form-control {
+main nav .input-group-text,
+main .form-control {
     background-color: white;
     border: 1px solid #E5E5E5;
 }
 
-.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+.top_main .new_student .offcanvas,
+.top_main .new_student .offcanvas-lg,
+.top_main .new_student .offcanvas-md,
+.top_main .new_student .offcanvas-sm,
+.top_main .new_student .offcanvas-xl,
+.top_main .new_student .offcanvas-xxl {
     --bs-offcanvas-width: 800px;
 }
 
-.bottom_main {
+main .bottom_main {
     background-color: white;
 }
