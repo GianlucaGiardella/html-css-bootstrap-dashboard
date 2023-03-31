@@ -1,15 +1,21 @@
+/* heaer */
+
 ul {
     list-style: none;
 }
 
-nav .input-group-text, .form-control {
+header nav form .input-group .input-group-text, header nav form .input-group .form-control {
     background-color: #E5E5E5;
     border: 0;
     padding: .375rem;
 }
 
-nav form, .spaced {
+header nav form, .spaced {
     flex: 1 0 0;
+}
+
+nav img {
+    margin-inline-end: 1rem;
 }
 
 .navbar-nav {
@@ -23,8 +29,11 @@ nav form, .spaced {
     right: 0;
 }
 
-.spaced {
-    flex: 1 0 0;
+/* main */
+
+aside, .top_main>.row {
+    padding-top: 72px;
+    padding-bottom: 31px;
 }
 
 aside {
@@ -34,7 +43,41 @@ aside {
     background-repeat: no-repeat;
 }
 
-aside, main {
-    padding-top: 62px;
-    padding-bottom: 31px;
+aside li a:hover {}
+
+aside i {
+    text-align: center;
+    width: 20px;
+}
+
+/* main */
+
+.top_main>.row {
+    background-color: #1B72E8;
+}
+
+.top_main .btn i {
+    width: 16px;
+    aspect-ratio: 1 / 1;
+}
+
+.top_main .btn:hover {
+    color: #1B72E8;
+}
+
+.top_main .badge {
+    background-color: #165BBA;
+}
+
+main nav .input-group-text, main .form-control {
+    background-color: white;
+    border: 1px solid #E5E5E5;
+}
+
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-width: 800px;
+}
+
+.bottom_main {
+    background-color: white;
 }

@@ -18,7 +18,7 @@
     <header class="fixed-top">
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid bg-white">
-                <a class="navbar-brand d-flex d-lg-none align-items-center">
+                <a class="d-flex d-lg-none align-items-center">
                     <img src="assets/img/mobile-logo.png" alt="mobile-logo" height="36">
                 </a>
 
@@ -72,22 +72,152 @@
             <aside class="col-auto vh-100">
                 <ul class="nav navbar-dark flex-column h-100" data-ds-theme="ligh">
                     <li class="nav-item">
-                        <a href="#" class="nav-link p-2 text-white"><i class="fa-solid fa-house"></i> <span class="d-none d-lg-inline ms-2">Home</span></a>
+                        <a href="#" class="nav-link p-2 text-white"><i class="fa-solid fa-house"></i> <span
+                                class="d-none d-lg-inline ms-2">Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link p-2 text-white"><i class="fa-solid fa-chart-simple"></i> <span class="d-none d-lg-inline ms-2">Stats</span></a>
+                        <a href="#" class="nav-link p-2 text-white"><i class="fa-solid fa-chart-simple"></i> <span
+                                class="d-none d-lg-inline ms-2">Stats</span></a>
                     </li>
                     <li class="nav-item spaced">
                         <a href="#" class="nav-link p-2 text-white"><i class="fa-solid fa-signal"></i>
-                        <span class="d-none d-lg-inline ms-2">Signals</span></a>
+                            <span class="d-none d-lg-inline ms-2">Signals</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link p-2 text-white"><i class="fa-solid fa-gear"></i> <span class="d-none d-lg-inline ms-2">Admin</span></a>
+                        <a href="#" class="nav-link p-2 text-white"><i class="fa-solid fa-gear"></i> <span
+                                class="d-none d-lg-inline ms-2">Admin</span></a>
                     </li>
                 </ul>
             </aside>
 
-            <main class="col"></main>
+            <main class="col">
+                <div class="top_main text-white">
+                    <div class="row row-cols-1 row-cols-md-3 gy-4">
+                        <div class="col">
+                            <div class="contents d-flex align-items-center">
+                                <h2 class="fs-5 fw-normal me-3">Nuovo Studente</h2>
+                                <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i
+                                        class="fa-solid fa-plus"></i></button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                                    aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo
+                                            studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <form class="row">
+                                            <div class="col-12 col-lg-6 mb-3">
+                                                <label for="name" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="name">
+                                            </div>
+                                            <div class="col-12 col-lg-6 mb-3">
+                                                <label for="last_name" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="last_name">
+                                            </div>
+                                            <div class="col-12 col-lg-6 mb-3">
+                                                <label for="Email1" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="Email1">
+                                            </div>
+                                            <div class="col-12 col-lg-6 mb-3">
+                                                <label for="Password1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="Password1">
+                                            </div>
+                                            <div class="col-12 col-lg-6 mb-3">
+                                                <label for="EmailConf" class="form-label">Conferma Email</label>
+                                                <input type="email" class="form-control" id="EmaiConf">
+                                            </div>
+                                            <div class="col-12 col-lg-6 mb-3">
+                                                <label for="PasswordConf" class="form-label">Conferma Password</label>
+                                                <input type="password" class="form-control" id="PasswordConf">
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <label for="address" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="address">
+                                            </div>
+                                            <div class="col-12 col-lg-6 mb-3">
+                                                <label for="city" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="city">
+                                            </div>
+                                            <div class="col-12 col-lg-4 mb-3">
+                                                <label for="state" class="form-label">Stato</label>
+                                                <select class="form-select" id="state">
+                                                    <option>Scegli...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-lg-2 mb-3">
+                                                <label for="cap" class="form-label">Cap</label>
+                                                <input type="text" class="form-control" id="cap">
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <label for="formFile" class="form-label">Foto</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                            <div class="col-12 mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Seleziona per
+                                                    proseguire</label>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button type="reset" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="contents">
+                                <div>
+                                    <h1 class="d-inline-block fs-3">Boolean</h1> <span class="badge rounded-pill">Piano
+                                        Blaze</span>
+                                </div>
+                                <div>
+                                    <span class="badge rounded-pill">3 app</span>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <span class="badge rounded-pill d-inline-block d-lg-none">+</span>
+                                    <span class="badge rounded-pill d-none d-lg-inline-block">Boolean
+                                        mobile app</span>
+                                    <span class="badge rounded-pill d-none d-lg-inline-block">Boolean web
+                                        app</span>
+                                    <span class="badge rounded-pill d-none d-lg-inline-block">Boolean
+                                        blog app</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="contents">
+                                <h2 class="fs-5 fw-normal">Studenti online negli ulitmi 30 minuti</h2>
+                                <div class="fs-3">125</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom_main">
+                    <div class="row">
+                        <div class="col">
+                            <div class="classi">
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="todo">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
 
