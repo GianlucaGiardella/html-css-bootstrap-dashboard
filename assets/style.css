@@ -37,11 +37,17 @@ aside, .top_main>.row {
 aside {
     background-color: #051E34;
     background-image: url(img/sidebar-bg.png);
-    background-position-x: 15%;
+    background-position-x: 22%;
     background-repeat: no-repeat;
 }
 
-aside li a:hover {}
+aside li a{
+    background-color: #051E34;
+}
+
+aside li a:hover {
+    background-color: #10385b;
+}
 
 aside i {
     text-align: center;
