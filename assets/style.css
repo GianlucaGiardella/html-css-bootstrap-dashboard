@@ -12,22 +12,13 @@ header nav form,
     flex: 1 0 0;
 }
 
-header nav a>img {
-    margin-inline-end: 1rem;
-}
-
-header nav .navbar-nav {
-    flex-direction: row;
-    margin-inline-start: 1rem;
-}
-
 header nav .navbar-nav .dropdown .dropdown-menu[data-bs-popper] {
     position: absolute;
     left: unset;
     right: 0;
 }
 
-/* main */
+/* aside */
 
 aside, .top_main>.row {
     padding-top: 72px;
@@ -50,7 +41,6 @@ aside li a:hover {
 }
 
 aside i {
-    text-align: center;
     width: 20px;
 }
 
